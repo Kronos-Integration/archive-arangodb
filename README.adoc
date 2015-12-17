@@ -1,0 +1,6 @@
+image:https://img.shields.io/npm/v/stream-line-parser.svg[npm,link=https://www.npmjs.com/package/stream-line-parser]
+image:https://secure.travis-ci.org/darlenya/stream-line-parser.png[Build Status,link=http://travis-ci.org/darlenya/stream-line-parser]
+image:https://david-dm.org/darlenya/stream-line-parser.svg[Dependency Status,link=https://david-dm.org/darlenya/stream-line-parser]
+image:https://david-dm.org/darlenya/stream-line-parser/dev-status.svg[devDependency Status,link=https://david-dm.org/darlenya/stream-line-parser#info=devDependencies]
+
+include::./doc/index.adoc[]

@@ -1,0 +1,111 @@
+== archive-arangodb
+This module stores blob data into the Arango Database. This module is for archiving files.
+The archive entry is splited into three entries which will be generated.
+
+meta::
+The meta entry contains all the meta data for an archive entry.
+
+blob::
+The blob entry is the object itself. But each entry will only be stored once. So
+if the same file will be added twice to the archive it will stored only once.
+
+edge::
+The edge entry 'joins' the meta data with the blob entry. So if the same object will be stored
+twice there will be two meta entries and two edges, but only one blob entry.
+
+=== archive methods
+
+==== initialize
+This method initializes the data base connection and setup the names which should
+be used for the collection in the database to store the data.
+
+[source, js]
+----
+const configuration = {
+  // Defines the names used for the collections
+  "collections": {
+    "collectionNameMetaData": "archiveMetaData",
+    "collectionNameEdge": "archiveEdges",
+    "collectionNameBlob": "archiveBlobData"
+  },
+
+  // defines the data base connection. See arango documentation for more details
+  "dataBase": {
+    "url": url,
+    "databaseName": dbname
+  }
+};
+
+const archive = require('hyperion_archive_arango');
+archive.initialize(configuration);
+----
+
+==== save
+Saves a new entry in the archive.
+It will return a promise whith the ID of the stored meta data object.
+
+[source, js]
+----
+archive.save(meta, blob): Promise(id)
+----
+
+Parameter
+
+* meta (mandatory) The meta data hash to be stored with the blob.
+* blob (mandatory) The blob to be archived.
+
+
+==== list
+List the entries existing in the archive.
+If the list function is called without any parameter it will return all the entries.
+
+[source, js]
+----
+archive.list(filter, sort): Promise(cursor)
+----
+
+Parameter
+
+* filter (optional) The filter condition to be used
+* sort (optional) The sort condition
+
+.example
+[source, js]
+----
+const myFilter = "doc.fileName = 'my_first_file.csv'";
+const sort;
+
+archive.list(filter, sort).then(function (cursor) {
+  console.log(cursor.all());
+});
+----
+
+This example will log all meta entries where the file name equals ''my_first_file.csv''.
+the ''doc'' in the filter condition is used to reference the meta object.
+
+
+==== get
+Returns the blob data for an archived element.
+
+[source, js]
+----
+archive.list(id): Promise(blob)
+----
+
+Parameter
+
+* id (mandatory) The id of the meta data object.
+
+==== delete
+Removes the archived element for the given meta data id.
+The blob data will only be removed if there is no meta data object
+referencing this blob any more.
+
+[source, js]
+----
+archive.delete(id): Promise()
+----
+
+Parameter
+
+* id (mandatory) The id of the meta data object.
