@@ -8,6 +8,8 @@
 // The URL used to execite the test
 const url = "http://localhost:8529";
 
+const stream = require('stream');
+
 // The database name used for the tests
 const dbname = "archive_arango_test";
 
@@ -44,19 +46,13 @@ describe("archive-arango", function () {
 		// create the database
 		// console.log('BEFORE');
 		return db.createDatabase(dbname).then(function (db) {
-			return new Promise(function (fulfill, reject) {
-				fulfill(db);
-			});
+			return Promise.resolve(db);
 		}, function (err) {
 			if (err.errorNum == 1207) {
 				// The database already exists
-				return new Promise(function (fulfill, reject) {
-					fulfill(true);
-				});
+				return Promise.resolve(true);
 			} else {
-				return new Promise(function (fulfill, reject) {
-					reject(err);
-				});
+				return Promise.reject(err);
 			}
 		});
 	});
@@ -80,6 +76,24 @@ describe("archive-arango", function () {
 		return archive.save({
 			"name": "test 1"
 		}, msg).then(function (id) {
+			return archive.get(id).should.eventually.equal(msg);
+		});
+	});
+
+	it("saves a blob and retrieves it again as stream", function () {
+		let msg = "My long blob message";
+
+		function streamify(text) {
+			let s = new stream.Readable();
+			s.push(text);
+			s.push(null);
+			return s;
+		}
+		let myStream = streamify(msg);
+
+		return archive.save({
+			"name": "test 1"
+		}, myStream).then(function (id) {
 			return archive.get(id).should.eventually.equal(msg);
 		});
 	});
