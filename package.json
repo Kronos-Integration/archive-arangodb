@@ -10,13 +10,16 @@
     "test": "mocha test/*.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "devDependencies": {
     "chai": "3.4.1",
@@ -34,7 +37,7 @@
     "node": ">=4.2.1"
   },
   "dependencies": {
-    "arangojs": "^3.9.1",
+    "arangojs": "^4.2.1",
     "lodash": "^3.10.1",
     "log4js": "^0.6.26",
     "md5": "^2.0.0"
