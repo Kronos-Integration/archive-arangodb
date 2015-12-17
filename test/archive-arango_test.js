@@ -11,7 +11,6 @@ const url = "http://localhost:8529";
 // The database name used for the tests
 const dbname = "archive_arango_test";
 
-
 const chai = require('chai');
 chai.use(require("chai-as-promised"));
 const should = chai.should();
