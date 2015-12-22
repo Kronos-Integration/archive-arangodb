@@ -42,6 +42,9 @@ let archive = require("../lib/archive-arango.js");
 archive.initialize(testConfiguration);
 
 describe("archive-arango", function () {
+	// needed to work in Travis
+	this.timeout(5000);
+
 	before('Create the database for testing', function () {
 		// create the database
 		// console.log('BEFORE');
