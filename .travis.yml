@@ -16,8 +16,8 @@ before_install:
   - npm i -g npm@latest
 before_script:
   - npm prune
-  - chmod 777 ./test/travis/setup_arangodb.sh
-  - ./test/travis/setup_arangodb.sh
+  - chmod 777 ./tests/travis/setup_arangodb.sh
+  - ./tests/travis/setup_arangodb.sh
 script:
   - npm run-script cover
 after_script:
