@@ -37,7 +37,7 @@
     "node": ">=4.2.1"
   },
   "dependencies": {
-    "arangojs": "^3.9.1",
+    "arangojs": "^4.3.0",
     "lodash": "^4.0.0",
     "log4js": "^0.6.30",
     "md5": "^2.0.0"
