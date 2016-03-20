@@ -27,7 +27,7 @@
     "istanbul": "0.4.2",
     "jsdoc": "3.4.0",
     "mocha": "2.4.5",
-    "semantic-release": "6.2.0"
+    "semantic-release": "6.2.1"
   },
   "repository": {
     "type": "git",
