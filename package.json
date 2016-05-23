@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "arangojs": "^4.3.0",
-    "lodash": "^4.11.2",
+    "lodash": "^4.13.0",
     "log4js": "^0.6.33",
     "md5": "^2.1.0"
   },
