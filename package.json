@@ -26,7 +26,7 @@
     "chai-as-promised": "6.0.0",
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
-    "jsdoc": "3.4.2",
+    "jsdoc": "3.4.3",
     "mocha": "3.3.0",
     "semantic-release": "6.3.2"
   },
