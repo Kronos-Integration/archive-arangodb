@@ -4,3 +4,6 @@ image:https://david-dm.org/darlenya/stream-line-parser.svg[Dependency Status,lin
 image:https://david-dm.org/darlenya/stream-line-parser/dev-status.svg[devDependency Status,link=https://david-dm.org/darlenya/stream-line-parser#info=devDependencies]
 
 include::./doc/index.adoc[]
+
+
+image:https://badges.greenkeeper.io/Kronos-Integration/archive-arangodb.svg[link="https://greenkeeper.io/"]
