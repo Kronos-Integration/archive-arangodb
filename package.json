@@ -23,7 +23,7 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "chai": "4.0.2",
-    "chai-as-promised": "7.1.0",
+    "chai-as-promised": "7.1.1",
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.4.3",
