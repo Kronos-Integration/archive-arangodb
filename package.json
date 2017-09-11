@@ -22,20 +22,20 @@
   ],
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "chai": "4.1.2",
+    "chai": "^4.1.2",
     "chai-as-promised": "7.1.1",
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.5.4",
-    "mocha": "3.5.2",
-    "semantic-release": "7.0.2"
+    "mocha": "^3.5.2",
+    "semantic-release": "^8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kronos-Integration/archive-arangodb.git"
+    "url": "git+https://github.com/Kronos-Integration/archive-arangodb.git"
   },
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=8.4.0"
   },
   "dependencies": {
     "arangojs": "^5.7.0",
@@ -48,9 +48,12 @@
     "url": "https://github.com/Kronos-Integration/archive-arangodb/issues"
   },
   "homepage": "https://github.com/Kronos-Integration/archive-arangodb#readme",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+  "xo": {
+    "space": true
+  },
+  "template": {
+    "repository": {
+      "url": "https://github.com/Kronos-Tools/npm-package-template-minimal.git"
     }
   }
 }

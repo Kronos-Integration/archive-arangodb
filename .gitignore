@@ -1,2 +1,14 @@
+coverage
+package-lock.json
 node_modules
+build
+dist
+out
+*.log
+*.dump
+.DS_Store
+.nyc_output
+.test
+.tmp
+
 package-lock.js
