@@ -27,7 +27,7 @@
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.5.4",
-    "mocha": "^3.5.2",
+    "mocha": "^3.5.3",
     "semantic-release": "^8.0.0"
   },
   "repository": {
