@@ -28,7 +28,7 @@
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
     "mocha": "^3.5.3",
-    "semantic-release": "^8.0.0"
+    "semantic-release": "^8.0.3"
   },
   "repository": {
     "type": "git",
