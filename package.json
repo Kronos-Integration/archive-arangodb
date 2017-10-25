@@ -27,15 +27,15 @@
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
-    "mocha": "^4.0.1",
-    "semantic-release": "^8.2.0"
+    "mocha": "^3.5.3",
+    "semantic-release": "^8.2.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kronos-Integration/archive-arangodb.git"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=8.7.0"
   },
   "dependencies": {
     "arangojs": "^5.7.1",
