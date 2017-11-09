@@ -8,7 +8,7 @@
     "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
     "doc": "node ./node_modules/.bin/jsdoc lib/*.js",
     "test": "node ./node_modules/.bin/mocha tests/*_test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "contributors": [
     {
@@ -28,14 +28,14 @@
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
     "mocha": "^3.5.3",
-    "semantic-release": "^8.2.2"
+    "semantic-release": "^9.1.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kronos-Integration/archive-arangodb.git"
   },
   "engines": {
-    "node": ">=8.8.1"
+    "node": ">=8.9.1"
   },
   "dependencies": {
     "arangojs": "^5.7.1",
