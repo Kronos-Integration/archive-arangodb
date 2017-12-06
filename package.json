@@ -35,7 +35,7 @@
     "url": "git+https://github.com/Kronos-Integration/archive-arangodb.git"
   },
   "engines": {
-    "node": ">=8.9.1"
+    "node": ">=8.9.2"
   },
   "dependencies": {
     "arangojs": "^5.8.0",
