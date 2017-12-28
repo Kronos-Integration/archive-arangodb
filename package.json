@@ -1,15 +1,9 @@
 {
   "name": "archive-arangodb",
-  "tags": "kronos-step",
   "version": "0.0.0-semantic-release",
-  "description": "flow step to tar/untar streams",
   "main": "index.js",
-  "scripts": {
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
-    "doc": "node ./node_modules/.bin/jsdoc lib/*.js",
-    "test": "node ./node_modules/.bin/mocha tests/*_test.js",
-    "semantic-release": "semantic-release"
-  },
+  "description": "flow step to tar/untar streams",
+  "keywords": [],
   "contributors": [
     {
       "name": "Torsten Link",
@@ -21,6 +15,18 @@
     }
   ],
   "license": "BSD-2-Clause",
+  "scripts": {
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
+    "doc": "node ./node_modules/.bin/jsdoc lib/*.js",
+    "test": "node ./node_modules/.bin/mocha tests/*_test.js",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "arangojs": "^5.8.0",
+    "lodash": "^4.17.4",
+    "log4js": "^2.4.1",
+    "md5": "^2.2.1"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-as-promised": "7.1.1",
@@ -30,20 +36,13 @@
     "mocha": "^3.5.3",
     "semantic-release": "^11.1.0"
   },
+  "engines": {
+    "node": ">=8.9.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kronos-Integration/archive-arangodb.git"
   },
-  "engines": {
-    "node": ">=8.9.3"
-  },
-  "dependencies": {
-    "arangojs": "^5.8.0",
-    "lodash": "^4.17.4",
-    "log4js": "^2.4.1",
-    "md5": "^2.2.1"
-  },
-  "keywords": [],
   "bugs": {
     "url": "https://github.com/Kronos-Integration/archive-arangodb/issues"
   },
@@ -55,5 +54,6 @@
     "repository": {
       "url": "https://github.com/Kronos-Tools/npm-package-template-minimal.git"
     }
-  }
+  },
+  "tags": "kronos-step"
 }
