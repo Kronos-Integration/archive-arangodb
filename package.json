@@ -34,10 +34,10 @@
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
     "mocha": "^5.0.0",
-    "semantic-release": "^12.2.2"
+    "semantic-release": "^12.2.3"
   },
   "engines": {
-    "node": ">=8.9.3"
+    "node": ">=8.9.4"
   },
   "repository": {
     "type": "git",
