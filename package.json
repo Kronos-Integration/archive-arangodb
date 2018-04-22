@@ -33,7 +33,7 @@
     "cz-conventional-changelog": "2.0.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
-    "mocha": "^5.0.5",
+    "mocha": "^5.1.1",
     "semantic-release": "^15.1.7"
   },
   "engines": {
