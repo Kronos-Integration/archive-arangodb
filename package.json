@@ -24,7 +24,7 @@
   "dependencies": {
     "arangojs": "^6.2.3",
     "lodash": "^4.17.5",
-    "log4js": "^2.6.1",
+    "log4js": "^2.7.0",
     "md5": "^2.2.1"
   },
   "devDependencies": {
