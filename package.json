@@ -24,7 +24,7 @@
   "dependencies": {
     "arangojs": "^6.2.3",
     "lodash": "^4.17.5",
-    "log4js": "^2.6.1",
+    "log4js": "^2.8.0",
     "md5": "^2.2.1"
   },
   "devDependencies": {
@@ -32,8 +32,8 @@
     "chai-as-promised": "7.1.1",
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
-    "mocha": "^5.1.1",
-    "semantic-release": "^15.4.1"
+    "mocha": "^5.2.0",
+    "semantic-release": "^15.5.2"
   },
   "engines": {
     "node": ">=10.4"
