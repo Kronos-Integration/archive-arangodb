@@ -22,7 +22,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "arangojs": "^6.5.0",
+    "arangojs": "^6.5.1",
     "lodash": "^4.17.5",
     "log4js": "^3.0.5",
     "md5": "^2.2.1"
